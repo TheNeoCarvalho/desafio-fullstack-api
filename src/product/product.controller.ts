@@ -22,9 +22,7 @@ export class ProductController {
     @ApiOperation({ 'summary': 'List all products' })
     @ApiResponse({ status: 200, description: 'The all records was been successfully listed.', type: ProductSwagger })
     @ApiResponse({ status: 400, description: 'Bad Request' })
-    findAll(@Query('search') search: string) {
-
-        console.log(search);
+    findAll(@Query('search') search?: string) {
         if (search === null || search === undefined) {
             return this.productService.findAll();
         }
