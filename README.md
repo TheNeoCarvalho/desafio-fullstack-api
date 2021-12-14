@@ -26,13 +26,83 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+## Teste Técnico Desenvolvedor FullStack - Mobile
 
-```bash
-$ npm install
+Teste de conhecimento técnico para a entrevista na Certsys
+
+O teste consiste na execução dos tópicos listados abaixo, sendo obrigatórios os itens de "Geral, Mobile e Backend", e será levado em consideração como um diferencial caso execute também algum item da lista "Pontos extras".
+
+**_Backend_**
+
+- [x] Rota de Listagem de tênis;
+- [x] Rota de comprar tênis;
+- [x] Construir duas tabelas: Product e Order.
+
+**_Geral_**
+
+- [x] GitFlow.
+
+**_Ponto extra_**
+
+- [ ] Clean Architecture;
+- [ ] Docker;
+- [ ] Desenvolver o backend com Nestjs(preferível) ou Nodejs.
+
+**_Prototipo_**
+
+```text
+https://xd.adobe.com/view/805c6555-3e18-4105-98e5-d5486211e920-d50f/
 ```
 
-## Running the app
+**_Observação_**
+
+- Todos os pontos [x] são obrigatórios.
+- Segue um schema do banco contido no arquivo schema.jsonc.
+- As imagens para teste encontra-se na pasta images.
+
+# Challenge Instructions
+
+### Clone this repository
+
+```bash
+git clone https://github.com/TheNeoCarvalho/desafio-fullstack-api.git
+```
+
+### Change directory
+
+```bash
+cd desafio-fullstack-api
+```
+
+### Install the dependecies
+
+```bash
+yarn
+```
+
+or
+
+```bash
+npm i
+```
+
+### Change file .env-example to .env and modify the environment variables
+
+```bash
+POSTGRES_HOST=
+POSTGRES_USER=
+POSTGRES_PASS=
+POSTGRES_DATABASE=
+POSTGRES_PORT=
+```
+
+### Running the Docker
+
+```bash
+docker-compose up -d --build
+```
+
+### Running the app
 
 ```bash
 # development
@@ -40,34 +110,18 @@ $ npm run start
 
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
+### Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
+### Stay in touch
 
 - Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## License
+### License
 
 Nest is [MIT licensed](LICENSE).
